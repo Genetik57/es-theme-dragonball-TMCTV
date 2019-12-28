@@ -1,0 +1,98 @@
+<theme>
+  <formatVersion>4</formatVersion>
+  <include>./../tmctv.xml</include>
+  <view name="system">
+    <image name="background" extra="true">
+      <path>./art/fond.jpg</path>
+    </image>
+    <image name="logo">
+      <path>./art/logo.png</path>
+    </image>
+    <helpsystem name="help">
+      <textColor>f0ff00</textColor>
+      <iconColor>ff0000</iconColor>
+	  <fontPath>./../art/conthrax-sb.ttf</fontPath>
+	  <fontSize>0.025</fontSize>
+	  <pos>0.005 0.955</pos>
+    </helpsystem>
+  </view>
+  <view name="basic, detailed">
+    <image name="background">
+      <path>./art/fond.jpg</path>
+    </image>
+    <text name="system_name_1" extra="true">
+      <text></text>
+      <forceUppercase>1</forceUppercase>
+      <size>0.40 0.08</size>
+      <pos>0.527 0.01</pos>
+      <color>fffc00</color>
+      <fontPath>./../art/OPENSANS-LIGHT.TTF</fontPath>
+      <fontSize>0.055</fontSize>
+      <alignment>right</alignment>
+    </text>
+    <text name="system_name_2" extra="true">
+      <text></text>
+      <forceUppercase>1</forceUppercase>
+      <size>0.45 0.08</size>
+      <pos>0.527 0.07</pos>
+      <color>fffc00</color>
+      <fontPath>./../art/OPENSANS-LIGHT.TTF</fontPath>
+      <fontSize>0.055</fontSize>
+      <alignment>right</alignment>
+    </text>
+    <image name="logo">
+      <path>./art/logo.png</path>
+      <pos>0.025 0.100</pos>
+      <maxSize>0.55 0.1</maxSize>
+      <origin>0 0.5</origin>
+    </image>
+  </view>
+  <view name="basic">
+ 	<textlist name="gamelist">
+	    <pos>0.03 0.50</pos>
+        <size>0.22 0.42</size>
+        <selectorColor>fffc00</selectorColor>
+        <selectedColor>f0ff00</selectedColor>
+        <primaryColor>fd0200</primaryColor>
+        <secondaryColor>f0ff00</secondaryColor>
+        <fontPath>./fonts/Exo2-Bold.ttf</fontPath>
+        <fontSize>0.03</fontSize>
+        <alignment>left</alignment>
+		<lineSpacing>1.200</lineSpacing>
+		<scrollSound>./sounds/scroll.ogg</scrollSound>
+      </textlist>
+  </view>
+  <view name="detailed">
+			<video name="md_video">
+			<pos>0.81 0.50</pos>
+			<maxSize>0.35 0.35</maxSize>
+			<origin>0.5 0.5</origin>
+         <delay>0.1</delay>
+		 <default>./../video/static.mp4</default>
+         <showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+      </video> 
+	<image name="md_image">
+		<origin>0.5 0.5</origin>
+		<pos>0.50 0.65</pos>
+		<maxSize>0.30 0.30</maxSize>
+	</image>
+		  <rating name="md_rating">
+         <pos>0.030 0.165</pos>
+         <size>0.25 0.080</size>
+         <filledPath>./art/DB01.png</filledPath>
+         <unfilledPath>./art/DB02.png</unfilledPath>
+		 <zIndex>42</zIndex>
+      </rating>	
+    <text name="md_description">
+      <size>0.3 0.098</size>
+      <pos>0.67 0.780</pos>
+    </text>
+    <textlist name="gamelist">
+	    <pos>0.03 0.25</pos>
+        <size>0.20 0.42</size>
+      <alignment>left</alignment>
+      <horizontalMargin>0.01</horizontalMargin>
+    </textlist>
+  </view>
+</theme>
