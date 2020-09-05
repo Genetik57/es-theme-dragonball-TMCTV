@@ -9,7 +9,7 @@
       <path>./art/logo.png</path>
     </image>
     <helpsystem name="help">
-      <textColor>34eaff</textColor>
+      <textColor>f0ff00</textColor>
       <iconColor>ff0000</iconColor>
 	  <fontPath>./../art/conthrax-sb.ttf</fontPath>
 	  <fontSize>0.025</fontSize>
@@ -42,18 +42,18 @@
     </text>
     <image name="logo">
       <path>./art/logo.png</path>
-      <pos>0.028 0.120</pos>
+      <pos>0.025 0.100</pos>
       <maxSize>0.55 0.1</maxSize>
       <origin>0 0.5</origin>
     </image>
   </view>
   <view name="basic">
  	<textlist name="gamelist">
-	    <pos>0.05 0.25</pos>
-        <size>0.20 0.42</size>
-        <selectorColor>FGFGFGFGF</selectorColor>
-        <selectedColor>ffffff</selectedColor>
-        <primaryColor>34eaff</primaryColor>
+	    <pos>0.03 0.50</pos>
+        <size>0.22 0.42</size>
+        <selectorColor>fffc00</selectorColor>
+        <selectedColor>f0ff00</selectedColor>
+        <primaryColor>fd0200</primaryColor>
         <secondaryColor>f0ff00</secondaryColor>
         <fontPath>./fonts/Exo2-Bold.ttf</fontPath>
         <fontSize>0.03</fontSize>
@@ -63,33 +63,47 @@
       </textlist>
   </view>
   <view name="detailed">
+  
+  <image name="md_marquee">
+		<pos>0.50 0.87</pos>
+         <maxSize>0.15 0.12</maxSize>
+         <zIndex>36</zIndex>
+      </image>
+  
+  		  <image name="md_manual">
+         <zIndex>75</zIndex>       
+         <pos>0.291 0.36</pos>
+         <size>0.05 0.085</size>
+         <path>./../art/doc_filled.png</path>
+      </image>
+  
 			<video name="md_video">
-			<pos>0.80 0.48</pos>
+			<pos>0.81 0.49</pos>
 			<maxSize>0.35 0.35</maxSize>
 			<origin>0.5 0.5</origin>
-         <delay>0.0</delay>
+         <delay>0.1</delay>
 		 <default>./../video/static.mp4</default>
          <showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
       </video> 
 	<image name="md_image">
 		<origin>0.5 0.5</origin>
-		<pos>0.48 0.57</pos>
+		<pos>0.50 0.62</pos>
 		<maxSize>0.30 0.30</maxSize>
 	</image>
 		  <rating name="md_rating">
-         <pos>0.700 0.075</pos>
-         <size>0.8 0.090</size>
+         <pos>0.030 0.165</pos>
+         <size>0.25 0.080</size>
          <filledPath>./art/DB01.png</filledPath>
          <unfilledPath>./art/DB02.png</unfilledPath>
 		 <zIndex>42</zIndex>
       </rating>	
     <text name="md_description">
-      <size>0.3 0.14</size>
-      <pos>0.35 0.25</pos>
+      <size>0.3 0.098</size>
+      <pos>0.67 0.780</pos>
     </text>
     <textlist name="gamelist">
-	    <pos>0.05 0.25</pos>
+	    <pos>0.03 0.25</pos>
         <size>0.20 0.42</size>
       <alignment>left</alignment>
       <horizontalMargin>0.01</horizontalMargin>
